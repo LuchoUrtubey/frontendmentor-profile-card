@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* * {
+    margin: 0;
+} */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(/img/bg-pattern-top.svg), url(/img/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+    /* sin height declarado no se alinean verticalmente los items */
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 327px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.card__header {
+    width: 100%;
+    display: block;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #bbbbbb5b;
+}
+
+.card__body__profile {
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: calc(-48px - 5px);
+    background-color: white;
+}
+
+.card__body__title {
+    font-size: 1.7rem;
+    letter-spacing: .7px;
+    margin-top: 2rem;
+}
+
+h1 span {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    margin-left: 0.2rem;
+}
+
+.card__body__city {
+    color: var(--dark-grayish-blue);
+    font-size: 1.3rem;
+    margin-top: -0.2rem;
+    letter-spacing: .7px;
+    margin-bottom: 2.5rem;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__footer__social {
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card__footer__social p {
+    letter-spacing: 1.3px;
+    color: var(--dark-grayish-blue);
+}
+
+.card__footer__social h3 {
+    font-size: 1.7rem;
+    letter-spacing: 1.3px;
+}
+
+.parrafo {
+    position: relative;
+    top: -1rem;
+}
+
+
+
+.attribution {
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+a {
+    color: var(--very-dark-desaturated-blue);
+    font-style: italic;
+    text-decoration: none;
+}
+
+footer {
+    font-size: 1.6em;
+}
