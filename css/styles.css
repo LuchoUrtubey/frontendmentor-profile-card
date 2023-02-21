@@ -14,9 +14,10 @@ body {
     background-color: var(--dark-cyan);
     background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: right 51vw bottom 20vh, left 45vw top 40vh;
+    background-position: right 51vw bottom 68vh, left 45vw top 48vh;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
+    min-height: 100vh;
 }
 
 
