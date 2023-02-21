@@ -23,7 +23,7 @@ body {
 .card {
     margin: 170px auto 50px;
     width: 330px;
-    height: 380px;
+    height: 378px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -54,8 +54,14 @@ body {
 }
 
 .name {
+    margin: 0;
+    font-size: 18px;
     font-weight: 700;
     color: var(--very-dark-desaturated-blue);
+}
+
+.name span {
+    font-weight: normal;
 }
 
 .age,
